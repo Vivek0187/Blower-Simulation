@@ -79,19 +79,19 @@ Electrical power   : 0.124 kW
 ## 📊 Example Plots
 
 ### Pressure–Flow (p–Q) Curve
-![p–Q curve](plots/pq_curve.png)
+![p–Q curve](pq_curve.png)
 
 ### Electrical Input Power vs Flow
-![Power curve](plots/power_vs_flow.png)
+![Power curve](power_vs_flow.png)
 
 ### Pressure Profile Along Blower
-![Pressure profile](plots/pressure_profile.png)
+![Pressure profile](pressure_profile.png)
 
 ### Flow Distribution Along Blower
-![Flow profile](plots/flow_profile.png)
+![Flow profile](flow_profile.png)
 
 ### Power Breakdown
-![Power breakdown](plots/power_breakdown.png)
+![Power breakdown](power_breakdown.png)
 
 
 ##  How to Run
