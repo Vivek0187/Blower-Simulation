@@ -7,7 +7,7 @@ It combines **continuity** and **momentum** equations with **Darcy–Weisbach fr
 
 ---
 
-## ✨ Features
+## Features
 - **Pressure–Flow (p–Q) Curve:** Net pressure change across the blower vs. inlet volumetric flow.
 - **Flow Distribution:** Volumetric flow rate variation along the duct/blower length.
 - **Pressure Profile:** Static pressure variation along the axial coordinate.
@@ -24,13 +24,13 @@ It combines **continuity** and **momentum** equations with **Darcy–Weisbach fr
 
 ---
 
-## 📂 File Description
+## File Description
 - `blower_model.py` → Main Python script implementing the model.
 - `README.md` → This file.
 
 ---
 
-## ⚙️ User Inputs
+## User Inputs
 You can adjust the following parameters in the script:
 
 - **Geometry & Flow**
@@ -55,7 +55,7 @@ You can adjust the following parameters in the script:
 
 ---
 
-## 📊 Outputs
+## Outputs
 1. **p–Q curve**: Shows operating points where net Δp = 0.  
 2. **Electrical input power vs flow**: Energy requirement for different flows.  
 3. **Pressure profile**: Static pressure variation along duct length.  
@@ -66,6 +66,38 @@ At runtime, a **numeric summary** is also printed for the selected operating poi
 
 ---
 
-## ▶️ How to Run
+--- Operating point summary ---
+Q_in used          : 0.1184 m^3/s
+Fan Δp_total       : 600.5 Pa
+Air power (Q*Δp)   : 0.071 kW
+Shaft efficiency   : eta_fan = 0.650
+Drive*Motor*Ctrl   : 0.970 * 0.930 * 0.980 = 0.885
+Shaft power        : 0.110 kW
+Electrical power   : 0.124 kW
+
+
+## 📊 Example Plots
+
+### Pressure–Flow (p–Q) Curve
+![p–Q curve](plots/pq_curve.png)
+
+### Electrical Input Power vs Flow
+![Power curve](plots/power_vs_flow.png)
+
+### Pressure Profile Along Blower
+![Pressure profile](plots/pressure_profile.png)
+
+### Flow Distribution Along Blower
+![Flow profile](plots/flow_profile.png)
+
+### Power Breakdown
+![Power breakdown](plots/power_breakdown.png)
+
+
+##  How to Run
 ```bash
+pip install numpy matplotlib
 python blower_model.py
+```
+## Author-Vivek Shabareesh
+
